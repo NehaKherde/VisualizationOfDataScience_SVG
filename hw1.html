@@ -1,0 +1,160 @@
+<!-- Submited on 31st Aug 2018. Latest version of the homework-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>hw1 SVG</title>
+		<style>
+			.content {
+				text-align:center
+			}
+
+			rect {
+				fill: crimson;
+				stroke-width: 1;
+				stroke: black;
+			}
+
+			.xcontainer,
+			.ycontainer {
+				float: left;
+				min-height: 300px;
+				width: 50%;
+			}
+
+			path, line {
+				stroke: blue;
+				stroke-width: 4; 
+			}
+
+			.scatterplot {
+				border-style: solid; 
+				border-color: black; 
+				border-width: 2px;
+			}
+
+			.circleProperties {
+				stroke: red;
+				stroke-width: 3;
+				fill: red;
+			}
+
+		</style>
+	</head>
+	<body class="content">
+		<div>
+			<h2>CS-6630 Homework 1</h2>
+			<p><b>Name:</b> Neha Prafulla Kherde</p>
+			<p><b>e-mail:</b> nehakherde0629@gmail.com</p>
+			<p><b>uID:</b> u1205893</p>
+		</div>
+		<div>
+			<h3><u>Bar Charts</u></h3>
+			<div class= 'xcontainer'>
+				<p> X Dimension of the data </p>
+				<svg height= "300" width="400">
+					<!-- changed the width value by multiplying it with 25 -->
+					<rect height="25" width="250" />
+					<rect height="25" width="200" y= "25"/>
+					<rect height="25" width="325" y= "50"/>
+					<rect height="25" width="225" y= "75"/>
+					<rect height="25" width="275" y= "100"/>
+					<rect height="25" width="350" y= "125"/>
+					<rect height="25" width="150" y= "150"/>
+					<rect height="25" width="100" y= "175"/>
+					<rect height="25" width="300" y= "200"/>
+					<rect height="25" width="175" y= "225"/>
+					<rect height="25" width="125" y= "250"/>
+				</svg>
+			</div>
+			<div class= 'ycontainer'>
+				<p> Y Dimension of the data </p>
+				<svg height= "300" width="400">
+					<!-- changed the width value by multiplying it with 25 -->
+					<rect height="25" width="228.50" /> 
+					<rect height="25" width="203.50" y= "25"/>
+					<rect height="25" width="218.50" y= "50"/>
+					<rect height="25" width="219.25" y= "75"/>
+					<rect height="25" width="231.50" y= "100"/>
+					<rect height="25" width="202.50" y= "125"/>
+					<rect height="25" width="153.25" y= "150"/>
+					<rect height="25" width="77.500" y= "175"/>
+					<rect height="25" width="228.25" y= "200"/>
+					<rect height="25" width="181.50" y= "225"/>
+					<rect height="25" width="118.50" y= "250"/>
+				</svg>
+			</div>
+		</div>
+		<div>
+			<h3><u>Line Charts</u></h3>
+			<div class= 'xcontainer'>
+				<p> X Dimension of the data using SVG path element.</p>
+				<svg height= "350" width= "350">
+					<!-- multiplied X values with 25 with distance between 2 adjacent points as 25   -->
+					<g transform="translate(0, 350) scale(1, -1)" >
+						<path d="M25 250 L50 200 L75 325 L100 225 L125 275 L150 350 L175 150 L200 100 L225 300 L250 175 L275 125" fill= "none"/>
+					</g>
+				</svg>
+			</div>
+			<div class= 'ycontainer'>
+				<p> Y Dimension of the data using SVG line element.</p>
+				<svg height= "350" width= "350">
+					<!-- multiplied Y values with 25 with distance between 2 adjacent points as 25   -->
+					<g transform="translate(0, 350) scale(1, -1)">
+						<line x1="25" y1="228.5" x2="50" y2="203.5"/>
+						<line x1="50" y1="203.5" x2="75" y2="218.5"/>
+						<line x1="75" y1="218.5" x2="100" y2="219.5"/>
+						<line x1="100" y1="219.5" x2="125" y2="231.5"/>
+						<line x1="125" y1="231.5" x2="150" y2="202.5"/>
+						<line x1="150" y1="202.5" x2="175" y2="153.25"/>
+						<line x1="175" y1="153.25" x2="200" y2="77.5"/>
+						<line x1="200" y1="77.5" x2="225" y2="228.25"/>
+						<line x1="225" y1="228.25" x2="250" y2="181.5"/>
+						<line x1="250" y1="181.5" x2="275" y2="118.5"/>
+					</g>
+				</svg>
+			</div>
+		</div>
+		<div>
+			<h3><u>Area Charts</u></h3>
+			<div class= 'xcontainer'>
+				<p> X Dimension of the data using SVG path element.</p>
+				<svg height= "350" width= "350">
+					<!-- multiplied X values with 25 with distance between 2 adjacent points as 25   -->
+					<g transform="translate(0, 350) scale(1, -1)" >
+						<path d="M25 0 L25 250 L50 200 L75 325 L100 225 L125 275 L150 350 L175 150 L200 100 L225 300 L250 175 L275 125 L275 0 Z" fill= "blue"/>
+					</g>
+				</svg>
+			</div>
+			<div class= 'ycontainer'>
+				<p> Y Dimension of the data using SVG path element.</p>
+				<svg height= "350" width= "350">
+					<!-- multiplied Y values with 25 with distance between 2 adjacent points as 25   -->
+					<g transform="translate(0, 350) scale(1, -1)" >
+						<path d="M25 0 L25 228.5 L50 203.5 L75 218.5 L100 219.5 L125 231.5 L150 202.5 L175 153.25 L200 77.5 L225 228.25 L250 181.5 	L275 118.5 L275 0 Z" fill= "blue"/>
+					</g>
+				</svg>
+			</div>
+		</div>
+		<div>
+			<h3><u>Scatterplot</u></h3>
+			<svg class= "scatterplot" height="300" width="300">
+				<!-- multiplied the x & y values with 20 -->
+		 		<g transform="translate(0, 300) scale(1, -1)" fill="brown">
+			        <circle cx="200" cy="182.8" r="8"/>
+			        <circle cx="160" cy="162.8" r="8"/>
+			        <circle cx="260" cy="174.8" r="8"/>
+			        <circle cx="180" cy="175.4" r="8"/>
+			        <circle cx="220" cy="185.2" r="8"/>
+			        <circle cx="280" cy="162" r="8"/>
+			        <circle cx="120" cy="122.6" r="8"/>
+			        <circle cx="80" cy="62" r="8"/>
+			        <circle cx="240" cy="182.6" r="8"/>
+			        <circle cx="140" cy="145.2" r="8"/>
+			        <circle cx="100" cy="94.8" r="8"/>
+		    	</g>
+			</svg> 
+		</div>
+	</body>
+</html>
