@@ -1,7 +1,4 @@
-# CS-5630 / CS-6630 Homework 1
-*Due: Friday, August 31, 11:59 pm.*
-
-In this assignment you will create a simple webpage with some graphical content using HTML, CSS, and SVG. These are basic building blocks that we will manipulate in later projects using Javascript and D3 in order to create visualizations. As such, it is important that you know how the pieces work on their own, before moving forward.
+Here you will create a simple webpage with some graphical content using HTML, CSS, and SVG. These are basic building blocks that we will manipulate in later projects using Javascript and D3 in order to create visualizations. As such, it is important that you know how the pieces work on their own, before moving forward.
 
 ## The Data
 
@@ -30,32 +27,23 @@ You can choose your design parameters freely, i.e., things like the color, aspec
 
 You **must use selectors to style your SVG elements**, i.e., you should not use inline styling. You should also not use classes or identifiers more than necessary for each chart, i.e., one class definition per chart should be sufficient.  There are good reasons to use both css class selectors and element selectors in this homework.
 
-Make sure your submission is a valid HTML5 file. Check that it is valid by uploading it to the [W3C HTML Validator](https://validator.w3.org/#validate_by_upload).
 
 ### Bar Charts
 
-Create horizontal bar charts for both the X and the Y dimensions of the data. Your bars should be aligned along the left and point right. Here is what your bars might look like:
-
-![Bar Charts](figures/bars.png)
+Create horizontal bar charts for both the X and the Y dimensions of the data. Your bars should be aligned along the left and point right.
 
 ### Line Charts
 
-Create line charts for both, the X and the Y dimensions of the data. Your y-axis should have 0 at the bottom. **Create the line chart for the X dimension out of a path element, and the line chart for the Y dimension out of SVG line elements**. Example line charts:
-
-![Line Charts](figures/lines.png)
+Create line charts for both, the X and the Y dimensions of the data. Your y-axis should have 0 at the bottom. **Create the line chart for the X dimension out of a path element, and the line chart for the Y dimension out of SVG line elements**.
 
 ### Area Charts
 
 Next, you should draw area charts of the same data. An area chart is very much like the line chart (hint: you can probably re-use some of the code from before), but it is filled. See the following examples:
 
-![Area Charts](figures/areas.png)
 
 ### Scatterplot
 
-A scatterplot shows how two dimensions relate to each other. Plot the X dimension along the x-axis, and the Y dimension along the y-axis. Frame your scatterplot. This should be your result, approximately:
-
-![Scatterplot](figures/scatter.png)
-
+A scatterplot shows how two dimensions relate to each other. Plot the X dimension along the x-axis, and the Y dimension along the y-axis. Frame your scatterplot. 
 
 ### ASSESSMENT
 
