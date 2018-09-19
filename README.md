@@ -38,7 +38,7 @@ Create line charts for both, the X and the Y dimensions of the data. Your y-axis
 
 ### Area Charts
 
-Next, you should draw area charts of the same data. An area chart is very much like the line chart (hint: you can probably re-use some of the code from before), but it is filled. See the following examples:
+Next, you should draw area charts of the same data. An area chart is very much like the line chart (hint: you can probably re-use some of the code from before), but it is filled. 
 
 
 ### Scatterplot
